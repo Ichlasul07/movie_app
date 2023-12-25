@@ -21,8 +21,8 @@
             <ul class="navbar-nav">
                  <li class="nav-item"><a href="#">Home</a></li>
                  <li class="nav-item"><a href="#movie">Movie</a></li>
-                 <li class="nav-item"><a href="#">Premium</a></li>
-                 <li id="loginn" class="nav-item"><a href="login">Login</a></li>
+                 <li id="premium" class="nav-item"><a href="premium">Premium</a></li>
+                 <li id="login" class="nav-item"><a href="login">Login</a></li>
     </ul>
 </nav>
 </header>
@@ -34,17 +34,6 @@
             <a class="main-btn" href="#">Get Premium</a>
         </div>
 </div>
-<div class="modal">
-<div class="login">
-    <h1 class="login-text">login</h1>
-    <form class= "login-form" action="post">
-        <input placeholder="username" class="login-type" type="text">
-        <input placeholder="password" class="login-type" type="password">
-        <button class="login-button" type="submit">login</button>
-    </form>
-</div>
-</div>
-</div>    
 <swiper-container class="mySwiper" keyboard="true" space-between="30" pagination="true" pagination-clickable="true"
     navigation="false" autoplay-delay="2500" autoplay-disable-on-interaction="false">
     <swiper-slide><img src="{{asset('')}}image/ff10home.jpg" alt="" class="home-img"> </swiper-slide>
