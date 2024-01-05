@@ -23,6 +23,7 @@
                  <li class="nav-item"><a href="#movie">Movie</a></li>
                  <li id="premium" class="nav-item"><a href="premium">Premium</a></li>
                  <li id="login" class="nav-item"><a href="login">Login</a></li>
+                 <li class="nav-item"><a href="#">Register</a></li>
     </ul>
 </nav>
 </header>

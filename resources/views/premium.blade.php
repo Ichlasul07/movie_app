@@ -7,17 +7,22 @@
         <meta name="author" content="" />
         <title>premium</title>
         <link href="{{asset('')}}CSS/premium.css" rel="stylesheet" />
-        <form action="action_page.php" method="post">
-        <div class="columns">
-  <ul class="price">
-    <li class="header">Basic</li>
-    <li class="grey">$ 9.99 / year</li>
-    <li>10GB Storage</li>
-    <li>10 Emails</li>
-    <li>10 Domains</li>
-    <li>1GB Bandwidth</li>
-    <li class="grey"><a href="#" class="button">Sign Up</a></li>
-  </ul>
+        <div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+        <div class="row">
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" >
+            <label for="adr"><i class="fa fa-address-card-o"></i> No.Telpon</label>
+            <input type="text" id="adr" name="address">
+        <input type="submit" value="Continue to payment" class="btn">
+      </form>
 </div>
     </head>
 </html>
