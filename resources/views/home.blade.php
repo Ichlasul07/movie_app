@@ -23,7 +23,7 @@
                  <li class="nav-item"><a href="#movie">Movie</a></li>
                  <li id="premium" class="nav-item"><a href="premium">Premium</a></li>
                  <li id="login" class="nav-item"><a href="login">Login</a></li>
-                 <li class="nav-item"><a href="#">Register</a></li>
+                 <li id="register" class="nav-item"><a href="register">Register</a></li>
     </ul>
 </nav>
 </header>
@@ -51,7 +51,7 @@
             <!-- box1 -->
              <div class="product-box">
                 <img src="{{asset('')}}image/ff10.jpg" alt="" class="product-img">
-                <a href="#">Fast and Furious X</a></li><br>
+                <li id="film"><a href="/film">Fast and Furious X</a></li><br>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>

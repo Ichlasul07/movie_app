@@ -3,7 +3,7 @@ body{
 }
 
 form {
-  border: 3px solid #141414;
+  border: 150px solid #141414;
 }
 
 input[type=text], input[type=password] {

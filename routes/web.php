@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,10 @@ Route::get('/register', function () {
 Route::get('/premium', function () {
     return view('premium');
 });
+
+Route::get('/film', function () {
+    return view('film');
+});
+
+Route::post('/register', [UserController::class,'index']);
+Route::post('/login', [UserController::class,'login']);

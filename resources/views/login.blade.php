@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>Login</title>
         <link href="{{asset('')}}CSS/login.css" rel="stylesheet" />
-        <form action="action_page.php" method="post">
+        <form action="/login" method="post">
   <div class="imgcontainer">
     <h1>GetMovie</h1>
   </div>
@@ -23,7 +23,7 @@
   </div>
 
   <div class="container" style="background-color:black">
-   <button type="button" class="cancelbtn" href='home'>Cancel</button>
+  <li id="premium" class="nav-item"> <button type="button" id="home" class="cancelbtn" href='home'>Cancel</button>
     <a href="#">Forgot password?</a></span>
   </div>
 </form>
