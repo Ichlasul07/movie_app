@@ -28,7 +28,7 @@
                     <i class="uil uil-estate"></i>
                     <span class="link-name">Dahsboard</span>
                 </a></li>
-                <li><a href="transaksi">
+                <li><a href="#">
                     <i class="uil uil-files-landscapes"></i>
                     <span class="link-name">Transaksi</span>
                 </a></li>
@@ -112,7 +112,7 @@
                                 
                             @endforelse
                         </tbody>
-                    </table>
+                    </table>
                 </div>
             </div>
         </div>

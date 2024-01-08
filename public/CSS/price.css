@@ -7,7 +7,7 @@ body{
 }
   .columns {
     position: absolute;
-    top: 25%;
+    top: 10%;
     left: 23%;
     z-index: 4;
     flex-direction: column;
@@ -17,6 +17,7 @@ body{
     float: left;
     width: 33.3%;
     padding: 8px;
+    border-radius: 10;
   }
   
   /* Style the list */
@@ -68,8 +69,13 @@ body{
   }
 
   .price-img{
-    height: 100%;
+    background-position: start;
     background-size: cover;
+    display: flex;
+    grid-template-columns: repeat(1, 1fr);
+    height:100%;
+    width: 100%;
+    filter: brightness(20%);
   }
   
   /* Change the width of the three columns to 100%

@@ -35,6 +35,10 @@ Route::get('/film', function () {
     return view('user.film');
 });
 
+Route::get('/transaksi', function () {
+    return view('admin.transaksi');
+});
+
 Route::post('/register', [UserController::class, "index"])->name('index');
 Route::post('/login', [UserController::class, "ceklogin"])->name('ceklogin');
 Route::middleware(['auth', 'user-access:user'])->group(function () {
@@ -46,7 +50,7 @@ Route::middleware(['auth', 'user-access:user'])->group(function () {
         return view('user.premium');
     });
 
-    Route::get('/price', function () {
+    Route::get('/user.price' , function () {
         return view('user.price');
     });
 

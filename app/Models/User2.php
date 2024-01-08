@@ -20,7 +20,7 @@ class User2 extends Authenticatable
     protected $table = "users";
     protected $primaryKey = "id";
     public $timestamp = false;
-   protected $fillable = [
+   protected $fillable = [ 
     'name',
     'email',
     'password',

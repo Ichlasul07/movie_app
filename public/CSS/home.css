@@ -139,12 +139,15 @@ section{
     
 }
 
+
 .main-btn{
-    background-color: black;
-    color: goldenrod;
-    padding: 12px 18px;
-    border-radius: 1px;
-    margin-left: -50px;
+  background-color: black;
+  color: goldenrod;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
 
 }
 

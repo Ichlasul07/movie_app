@@ -32,7 +32,7 @@
         <div class="heading">
             <h3>MULAI BERLANGGANAN SEKARANG <br> DAN TONTON FILM FAVORITMU</h3>
             <div class="class-button">    
-            <a class="main-btn" href="#">Get Premium</a>
+            <a class="main-btn" href="user.price">Get Premium</a>
         </div>
 </div>
 <swiper-container class="mySwiper" keyboard="true" space-between="30" pagination="true" pagination-clickable="true"

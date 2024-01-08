@@ -30,7 +30,7 @@ class TransactionController extends Controller
         ]);
 
         // TODO: Tambahkan logika pembayaran sesuai dengan kebijakan Anda
-
+        return redirect()->route('homeuser');
         return response()->json(['message' => 'Transaction created successfully', 'transaction' => $transaction], 201);
     }
 

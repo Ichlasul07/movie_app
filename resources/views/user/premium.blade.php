@@ -15,17 +15,13 @@
           @csrf
         <div class="row">
           <div class="col-50">
-            <h3>Payment</h3>
+            <h1>Payment</h1>
             <label for="fname"><i class="fa-user"></i> Username</label>
             <input type="text" id="fname" name="username">
             <label for="email"><i class="fa fa-envelope"></i> Email</label>
             <input type="text" id="email" name="email" >
-            <label for="profile_pic">Kirimkan Bukti Transfer</label>
-    <input
-      type="file"
-      id="profile_pic"
-      name="profile_pic"
-      accept=".jpg, .jpeg, .png" />
+            <h2>payment method</h2>
+            <h3 class="dana">Dana:085221299318 <br><br>BNI:15293019</h3>
         <button type="submit" class="btn">Payment</button>
       </form>
 </div>
