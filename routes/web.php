@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
-
+use App\Http\Controllers\TransactionController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,26 +13,48 @@ use App\Http\Controllers\UserController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/admin', function () {
+    return view('admin.home');
+})->name('admin');
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/admin',[UserController::class,'crud']);
 
 Route::get('/login', function () {
-    return view('login');
-});
+    return view('user.login');
+})->name('login');
 
 Route::get('/register', function () {
-    return view('register');
+    return view('user.register');
 });
 
 Route::get('/premium', function () {
-    return view('premium');
+    return view('user.premium');
 });
 
 Route::get('/film', function () {
-    return view('film');
+    return view('user.film');
 });
 
-Route::post('/register', [UserController::class,'index']);
-Route::post('/login', [UserController::class,'login']);
+Route::post('/register', [UserController::class, "index"])->name('index');
+Route::post('/login', [UserController::class, "ceklogin"])->name('ceklogin');
+Route::middleware(['auth', 'user-access:user'])->group(function () {
+    Route::get('/', function () {
+        return view('user.home');
+    })->name('homeuser');
+
+    Route::get('/premium', function () {
+        return view('user.premium');
+    });
+
+    Route::get('/price', function () {
+        return view('user.price');
+    });
+
+    Route::post('/transaksi', [TransactionController::class, "transaksi"]);
+    
+});
+Route::middleware(['auth', 'user-access:admin'])->group(function () {
+    Route::get('/adminHome', function () {
+        return view('admin.home');
+    });
+});

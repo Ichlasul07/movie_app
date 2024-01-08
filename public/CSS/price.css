@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body{
+    background-color: black;
+}
+  .columns {
+    position: absolute;
+    top: 25%;
+    left: 23%;
+    z-index: 4;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-left: 150px;
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+  }
+  
+  /* Style the list */
+  .price {
+    margin-top: 100px;
+    list-style-type: none;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  /* Add shadows on hover */
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  /* Pricing header */
+  .price .header {
+    background-color: black;
+    color: white;
+    font-size: 25px;
+  }
+  
+  /* List items */
+  .price li {
+    background-color: goldenrod;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Grey list item */
+  .price .grey {
+    background-color: goldenrod;
+    font-size: 20px;
+  }
+  
+  /* The "Sign Up" button */
+  .button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .price-img{
+    height: 100%;
+    background-size: cover;
+  }
+  
+  /* Change the width of the three columns to 100%
+  (to stack horizontally on small screens) */
+  @media only screen and (max-width: 600px) {
+    .columns {
+      width: 100%;
+    }
+  }

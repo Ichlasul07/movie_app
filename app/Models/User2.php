@@ -1,5 +1,6 @@
 <?php
 
+namespace App\Models;
 
 namespace App\Models;
 
@@ -12,7 +13,7 @@ use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Model;
 // use Illuminate\Contracts\Auth\Authenticatable as Authenticable;
 
-class User extends Authenticatable
+class User2 extends Authenticatable
 {
     // use HasFactory;
     use HasApiTokens, HasFactory, Notifiable;

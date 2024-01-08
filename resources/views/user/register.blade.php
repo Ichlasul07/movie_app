@@ -24,8 +24,8 @@
     <label for="psw"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="username" id="psw" required>
 
-    <label for="psw"><b>No_telp</b></label>
-    <input type="number" placeholder="Enter No.Telpon" name="telpon" id="psw" required>
+    <label for="psw"><b>email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="psw" required>
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="password" id="psw" required>

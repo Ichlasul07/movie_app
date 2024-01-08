@@ -11,24 +11,22 @@
         <div class="row">
   <div class="col-75">
     <div class="container">
-      <form action="/action_page.php">
-
+      <form action="/transaksi" method="POST" enctype="multipart/form-data">
+          @csrf
         <div class="row">
           <div class="col-50">
             <h3>Payment</h3>
             <label for="fname"><i class="fa-user"></i> Username</label>
-            <input type="text" id="fname" name="firstname">
+            <input type="text" id="fname" name="username">
             <label for="email"><i class="fa fa-envelope"></i> Email</label>
             <input type="text" id="email" name="email" >
-            <label for="adr"><i class="fa fa-address-card-o"></i> No.Telpon</label>
-            <input type="text" id="adr" name="address">
-            <label for="profile_pic">Choose file to upload</label>
+            <label for="profile_pic">Kirimkan Bukti Transfer</label>
     <input
       type="file"
       id="profile_pic"
       name="profile_pic"
       accept=".jpg, .jpeg, .png" />
-        <input type="submit" value="Continue to payment" class="btn">
+        <button type="submit" class="btn">Payment</button>
       </form>
 </div>
     </head>
